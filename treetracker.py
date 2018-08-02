@@ -191,7 +191,7 @@ class RefDispose(object):
         super(RefDispose, self).__init__()
         self.scriptpath = scriptpath
 
-    #1.1 打开参考文件并过滤indel和带有‘~’的haplogroup和
+    #open reference index
     def open_ref(self, ncmd, indelcmd):
         ref_info = pd.read_table(self.scriptpath + 'ref_index.txt', header = 0, sep = '\t', encoding = 'utf-8')
 
